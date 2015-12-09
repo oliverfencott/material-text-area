@@ -66,7 +66,7 @@ const TextArea = React.createClass({
       },
       hintText: {
         position: 'absolute',
-        top: 16,
+        top: 14,
         color: style.unfocusedColor,
         opacity: hasValue || !focused ? 0 : 1,
         transition
