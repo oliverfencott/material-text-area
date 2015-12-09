@@ -1,0 +1,24 @@
+{
+  "name": "material-text-area",
+  "version": "0.0.1",
+  "description": "Material design text areas for React.",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel --presets es2015,react --watch src/ --out-dir lib/",
+    "prepublish": "babel --presets es2015,react src/ --out-dir lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverfencott/material-text-area.git"
+  },
+  "author": "Oliver Fencott <oliverfencott@gmail.com> (http://fencott.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliverfencott/material-text-area/issues"
+  },
+  "homepage": "https://github.com/oliverfencott/material-text-area#readme",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
