@@ -45,7 +45,7 @@ const TextArea = React.createClass({
   },
 
   getStyles: function() {
-    const {style, hasErrors} = this.props;
+    const {style, hasErrors, floatingLabelText} = this.props;
     const focused = this.isFocused();
     const hasValue = this.hasValue();
 
@@ -68,7 +68,7 @@ const TextArea = React.createClass({
         position: 'absolute',
         top: 14,
         color: style.unfocusedColor,
-        opacity: hasValue || !focused ? 0 : 1,
+        opacity: (!hasValue && !floatingLabelText) || (focused && !hasValue) ? 1 : 0,
         transition
       },
       input: {
